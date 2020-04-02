@@ -18,15 +18,17 @@ struct ContentView: View {
                 Spacer()
                 Text(String(describing: temperatureManager.status).capitalized)
             }.padding()
-            Spacer()
-            HStack(alignment: .firstTextBaseline) {
-                Text("\(temperatureManager.temperature, specifier: "%.1f")")
-                    .font(.system(size: 80))
-                Text("°C")
-                    .font(.system(size: 40))
+            VStack {
+                HStack(alignment: .firstTextBaseline) {
+                    Text("\(temperatureManager.temperature, specifier: "%.1f")")
+                        .font(.system(size: 80))
+                    Text("°C")
+                        .font(.system(size: 40))
+                }.frame(minHeight: 0, maxHeight: .infinity)
+                ChartView()
+                    .padding()
+                    .frame(minHeight: 0, maxHeight: .infinity)
             }
-            Spacer()
-
         }
 
     }

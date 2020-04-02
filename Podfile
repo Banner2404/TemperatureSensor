@@ -2,7 +2,8 @@
 # platform :ios, '9.0'
 
 target 'TemperatureSensor' do
-  	use_frameworks!
+  use_frameworks!
 	pod 'AWSIoT'
+  pod 'Charts'
 
 end

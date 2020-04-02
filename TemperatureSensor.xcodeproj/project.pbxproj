@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1B8024124364E55000EBB15 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8024024364E55000EBB15 /* ChartView.swift */; };
 		D1EA2233243613D800E3F18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA2232243613D800E3F18B /* AppDelegate.swift */; };
 		D1EA2235243613D900E3F18B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA2234243613D900E3F18B /* SceneDelegate.swift */; };
 		D1EA2237243613D900E3F18B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA2236243613D900E3F18B /* ContentView.swift */; };
@@ -24,6 +25,8 @@
 		711A35BF5823227473C19929 /* Pods_TemperatureSensor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemperatureSensor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761A59F57C1E46A2CE654C4B /* Pods-TemperatureSensor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureSensor.debug.xcconfig"; path = "Target Support Files/Pods-TemperatureSensor/Pods-TemperatureSensor.debug.xcconfig"; sourceTree = "<group>"; };
 		78599C81C34D9A4F32F5EBD3 /* Pods-TemperatureSensor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureSensor.release.xcconfig"; path = "Target Support Files/Pods-TemperatureSensor/Pods-TemperatureSensor.release.xcconfig"; sourceTree = "<group>"; };
+		D1B8023F24364978000EBB15 /* TemperatureSensor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TemperatureSensor.entitlements; sourceTree = "<group>"; };
+		D1B8024024364E55000EBB15 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		D1EA222F243613D800E3F18B /* TemperatureSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EA2232243613D800E3F18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EA2234243613D900E3F18B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,9 +93,11 @@
 		D1EA2231243613D800E3F18B /* TemperatureSensor */ = {
 			isa = PBXGroup;
 			children = (
+				D1B8023F24364978000EBB15 /* TemperatureSensor.entitlements */,
 				D1EA2232243613D800E3F18B /* AppDelegate.swift */,
 				D1EA2234243613D900E3F18B /* SceneDelegate.swift */,
 				D1EA2236243613D900E3F18B /* ContentView.swift */,
+				D1B8024024364E55000EBB15 /* ChartView.swift */,
 				D1EA224A243615C500E3F18B /* TemperatureManager.swift */,
 				D1EA224E24361E5700E3F18B /* AWSShadow.swift */,
 				D1EA2238243613DC00E3F18B /* Assets.xcassets */,
@@ -233,6 +238,7 @@
 				D1EA2235243613D900E3F18B /* SceneDelegate.swift in Sources */,
 				D1EA224F24361E5700E3F18B /* AWSShadow.swift in Sources */,
 				D1EA2237243613D900E3F18B /* ContentView.swift in Sources */,
+				D1B8024124364E55000EBB15 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +375,7 @@
 			baseConfigurationReference = 761A59F57C1E46A2CE654C4B /* Pods-TemperatureSensor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TemperatureSensor/TemperatureSensor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TemperatureSensor/Preview Content\"";
 				DEVELOPMENT_TEAM = 59BWRK25DR;
@@ -380,6 +387,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.esobol.TemperatureSensor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +398,7 @@
 			baseConfigurationReference = 78599C81C34D9A4F32F5EBD3 /* Pods-TemperatureSensor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TemperatureSensor/TemperatureSensor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TemperatureSensor/Preview Content\"";
 				DEVELOPMENT_TEAM = 59BWRK25DR;
@@ -401,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.esobol.TemperatureSensor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

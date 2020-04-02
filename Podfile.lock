@@ -2,19 +2,25 @@ PODS:
   - AWSCore (2.13.0)
   - AWSIoT (2.13.0):
     - AWSCore (= 2.13.0)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
 
 DEPENDENCIES:
   - AWSIoT
+  - Charts
 
 SPEC REPOS:
   trunk:
     - AWSCore
     - AWSIoT
+    - Charts
 
 SPEC CHECKSUMS:
   AWSCore: 167aba8cdaff6873193a66f062f41749c6c6a3d3
   AWSIoT: 65a3cda7ea8b10bfb46492bed7f98e89f60e52e0
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
 
-PODFILE CHECKSUM: 0a1eb0a97072fd07b93980913dcd8bdc4c8c5759
+PODFILE CHECKSUM: 5e8e57e18b5f75396f20b4308b639bacfd46d522
 
 COCOAPODS: 1.8.4
