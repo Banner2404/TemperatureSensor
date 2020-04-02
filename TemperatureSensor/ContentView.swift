@@ -9,14 +9,32 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @EnvironmentObject var temperatureManager: TemperatureManager
+
     var body: some View {
-        Text("27.34")
-            .font(.system(size: 50))
+        VStack {
+            HStack {
+                Spacer()
+                Text(String(describing: temperatureManager.status).capitalized)
+            }.padding()
+            Spacer()
+            HStack(alignment: .firstTextBaseline) {
+                Text("\(temperatureManager.temperature, specifier: "%.1f")")
+                    .font(.system(size: 80))
+                Text("°C")
+                    .font(.system(size: 40))
+            }
+            Spacer()
+
+        }
+
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        .environmentObject(TemperatureManager())
     }
 }

@@ -14,6 +14,9 @@
 		D1EA223C243613DC00E3F18B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EA223B243613DC00E3F18B /* Preview Assets.xcassets */; };
 		D1EA223F243613DC00E3F18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EA223D243613DC00E3F18B /* LaunchScreen.storyboard */; };
 		D1EA22492436155A00E3F18B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D1EA22482436155A00E3F18B /* .gitignore */; };
+		D1EA224B243615C500E3F18B /* TemperatureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA224A243615C500E3F18B /* TemperatureManager.swift */; };
+		D1EA224D24361D7400E3F18B /* certificate.p12 in Resources */ = {isa = PBXBuildFile; fileRef = D1EA224C24361A8700E3F18B /* certificate.p12 */; };
+		D1EA224F24361E5700E3F18B /* AWSShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA224E24361E5700E3F18B /* AWSShadow.swift */; };
 		D9A5568BB0BBF94F3F19BF45 /* Pods_TemperatureSensor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A35BF5823227473C19929 /* Pods_TemperatureSensor.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		D1EA223E243613DC00E3F18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1EA2240243613DC00E3F18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1EA22482436155A00E3F18B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D1EA224A243615C500E3F18B /* TemperatureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureManager.swift; sourceTree = "<group>"; };
+		D1EA224C24361A8700E3F18B /* certificate.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = certificate.p12; sourceTree = "<group>"; };
+		D1EA224E24361E5700E3F18B /* AWSShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				D1EA22482436155A00E3F18B /* .gitignore */,
+				D1EA224C24361A8700E3F18B /* certificate.p12 */,
 				D1EA2231243613D800E3F18B /* TemperatureSensor */,
 				D1EA2230243613D800E3F18B /* Products */,
 				3D07BF52EFB1602F73119AA9 /* Pods */,
@@ -86,6 +93,8 @@
 				D1EA2232243613D800E3F18B /* AppDelegate.swift */,
 				D1EA2234243613D900E3F18B /* SceneDelegate.swift */,
 				D1EA2236243613D900E3F18B /* ContentView.swift */,
+				D1EA224A243615C500E3F18B /* TemperatureManager.swift */,
+				D1EA224E24361E5700E3F18B /* AWSShadow.swift */,
 				D1EA2238243613DC00E3F18B /* Assets.xcassets */,
 				D1EA223D243613DC00E3F18B /* LaunchScreen.storyboard */,
 				D1EA2240243613DC00E3F18B /* Info.plist */,
@@ -164,6 +173,7 @@
 			files = (
 				D1EA22492436155A00E3F18B /* .gitignore in Resources */,
 				D1EA223F243613DC00E3F18B /* LaunchScreen.storyboard in Resources */,
+				D1EA224D24361D7400E3F18B /* certificate.p12 in Resources */,
 				D1EA223C243613DC00E3F18B /* Preview Assets.xcassets in Resources */,
 				D1EA2239243613DC00E3F18B /* Assets.xcassets in Resources */,
 			);
@@ -218,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EA224B243615C500E3F18B /* TemperatureManager.swift in Sources */,
 				D1EA2233243613D800E3F18B /* AppDelegate.swift in Sources */,
 				D1EA2235243613D900E3F18B /* SceneDelegate.swift in Sources */,
+				D1EA224F24361E5700E3F18B /* AWSShadow.swift in Sources */,
 				D1EA2237243613D900E3F18B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
