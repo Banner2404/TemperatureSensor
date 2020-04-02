@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		D1EA2239243613DC00E3F18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EA2238243613DC00E3F18B /* Assets.xcassets */; };
 		D1EA223C243613DC00E3F18B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EA223B243613DC00E3F18B /* Preview Assets.xcassets */; };
 		D1EA223F243613DC00E3F18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EA223D243613DC00E3F18B /* LaunchScreen.storyboard */; };
+		D1EA22492436155A00E3F18B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D1EA22482436155A00E3F18B /* .gitignore */; };
+		D9A5568BB0BBF94F3F19BF45 /* Pods_TemperatureSensor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A35BF5823227473C19929 /* Pods_TemperatureSensor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711A35BF5823227473C19929 /* Pods_TemperatureSensor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemperatureSensor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		761A59F57C1E46A2CE654C4B /* Pods-TemperatureSensor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureSensor.debug.xcconfig"; path = "Target Support Files/Pods-TemperatureSensor/Pods-TemperatureSensor.debug.xcconfig"; sourceTree = "<group>"; };
+		78599C81C34D9A4F32F5EBD3 /* Pods-TemperatureSensor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureSensor.release.xcconfig"; path = "Target Support Files/Pods-TemperatureSensor/Pods-TemperatureSensor.release.xcconfig"; sourceTree = "<group>"; };
 		D1EA222F243613D800E3F18B /* TemperatureSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EA2232243613D800E3F18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EA2234243613D900E3F18B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D1EA223B243613DC00E3F18B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1EA223E243613DC00E3F18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1EA2240243613DC00E3F18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EA22482436155A00E3F18B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A5568BB0BBF94F3F19BF45 /* Pods_TemperatureSensor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D07BF52EFB1602F73119AA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				761A59F57C1E46A2CE654C4B /* Pods-TemperatureSensor.debug.xcconfig */,
+				78599C81C34D9A4F32F5EBD3 /* Pods-TemperatureSensor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C1D0324731932B114819EAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				711A35BF5823227473C19929 /* Pods_TemperatureSensor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1EA2226243613D800E3F18B = {
 			isa = PBXGroup;
 			children = (
+				D1EA22482436155A00E3F18B /* .gitignore */,
 				D1EA2231243613D800E3F18B /* TemperatureSensor */,
 				D1EA2230243613D800E3F18B /* Products */,
+				3D07BF52EFB1602F73119AA9 /* Pods */,
+				5C1D0324731932B114819EAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1EA2243243613DC00E3F18B /* Build configuration list for PBXNativeTarget "TemperatureSensor" */;
 			buildPhases = (
+				DCAC7C22467CBDDC3F367655 /* [CP] Check Pods Manifest.lock */,
 				D1EA222B243613D800E3F18B /* Sources */,
 				D1EA222C243613D800E3F18B /* Frameworks */,
 				D1EA222D243613D800E3F18B /* Resources */,
+				D162BC78C45721AA93994C69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EA22492436155A00E3F18B /* .gitignore in Resources */,
 				D1EA223F243613DC00E3F18B /* LaunchScreen.storyboard in Resources */,
 				D1EA223C243613DC00E3F18B /* Preview Assets.xcassets in Resources */,
 				D1EA2239243613DC00E3F18B /* Assets.xcassets in Resources */,
@@ -140,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D162BC78C45721AA93994C69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TemperatureSensor/Pods-TemperatureSensor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TemperatureSensor/Pods-TemperatureSensor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TemperatureSensor/Pods-TemperatureSensor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCAC7C22467CBDDC3F367655 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TemperatureSensor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1EA222B243613D800E3F18B /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		D1EA2244243613DC00E3F18B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761A59F57C1E46A2CE654C4B /* Pods-TemperatureSensor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +375,7 @@
 		};
 		D1EA2245243613DC00E3F18B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78599C81C34D9A4F32F5EBD3 /* Pods-TemperatureSensor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

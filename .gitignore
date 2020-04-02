@@ -1,0 +1,49 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+Pods/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*xcworkspace/xcuserdata/*
+Pods/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+### Fastlane  ###
+# fastlane specific
+fastlane/report.xml
+
+# deliver temporary files
+fastlane/Preview.html
+
+# snapshot generated screenshots
+fastlane/screenshots
+
+# scan temporary files
+fastlane/test_output
+fastlane/Export
+fastlane/metadata
+fastlane/DerivedData.nosync
+
+Spinn.coffee/GoogleService-Info.plist
