@@ -9,14 +9,18 @@
 import AWSIoT
 import Combine
 
-class TemperatureManager: ObservableObject {
+class TemperatureManager {
 
     @Published var status = Status.disconnected
-    @Published var temperature: Double = 0.0
+    @Published var temperature = 0.0
+
+    static let shared = TemperatureManager()
     private let certificateId = "certificateId"
     private let dataManagerKey = "AWSIoTDataManager"
     private let thingName = "TempSensor"
     private lazy var dataManager = AWSIoTDataManager(forKey: dataManagerKey)
+
+    private init() {}
 
     func connect() {
         setupAWS()

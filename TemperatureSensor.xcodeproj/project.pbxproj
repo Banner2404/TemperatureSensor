@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		D17EDB5C2437836400B24C26 /* HistoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17EDB5B2437836400B24C26 /* HistoryEntry.swift */; };
 		D17EDB5E2437848F00B24C26 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17EDB5D2437848F00B24C26 /* HistoryManager.swift */; };
-		D17EDB6124378A6200B24C26 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D17EDB5F24378A6200B24C26 /* amplifyconfiguration.json */; };
-		D17EDB6224378A6200B24C26 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D17EDB6024378A6200B24C26 /* awsconfiguration.json */; };
+		D17EDBA6243A34FB00B24C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17EDBA5243A34FB00B24C26 /* Main.storyboard */; };
+		D17EDBA8243A369300B24C26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17EDBA7243A369300B24C26 /* MainViewController.swift */; };
+		D17EDBAA243A40B500B24C26 /* credentials.json in Resources */ = {isa = PBXBuildFile; fileRef = D17EDBA9243A40B500B24C26 /* credentials.json */; };
 		D1EA2233243613D800E3F18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA2232243613D800E3F18B /* AppDelegate.swift */; };
 		D1EA2235243613D900E3F18B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA2234243613D900E3F18B /* SceneDelegate.swift */; };
-		D1EA2237243613D900E3F18B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA2236243613D900E3F18B /* ContentView.swift */; };
 		D1EA2239243613DC00E3F18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EA2238243613DC00E3F18B /* Assets.xcassets */; };
 		D1EA223C243613DC00E3F18B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EA223B243613DC00E3F18B /* Preview Assets.xcassets */; };
 		D1EA223F243613DC00E3F18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EA223D243613DC00E3F18B /* LaunchScreen.storyboard */; };
@@ -30,13 +30,13 @@
 		78599C81C34D9A4F32F5EBD3 /* Pods-TemperatureSensor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperatureSensor.release.xcconfig"; path = "Target Support Files/Pods-TemperatureSensor/Pods-TemperatureSensor.release.xcconfig"; sourceTree = "<group>"; };
 		D17EDB5B2437836400B24C26 /* HistoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEntry.swift; sourceTree = "<group>"; };
 		D17EDB5D2437848F00B24C26 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
-		D17EDB5F24378A6200B24C26 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		D17EDB6024378A6200B24C26 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		D17EDBA5243A34FB00B24C26 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D17EDBA7243A369300B24C26 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D17EDBA9243A40B500B24C26 /* credentials.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = credentials.json; sourceTree = "<group>"; };
 		D1B8023F24364978000EBB15 /* TemperatureSensor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TemperatureSensor.entitlements; sourceTree = "<group>"; };
 		D1EA222F243613D800E3F18B /* TemperatureSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EA2232243613D800E3F18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EA2234243613D900E3F18B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D1EA2236243613D900E3F18B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1EA2238243613DC00E3F18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1EA223B243613DC00E3F18B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1EA223E243613DC00E3F18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,13 +76,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D17EDBA3243A348300B24C26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1EA224E24361E5700E3F18B /* AWSShadow.swift */,
+				D17EDB5B2437836400B24C26 /* HistoryEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D17EDBA4243A348E00B24C26 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D1EA224A243615C500E3F18B /* TemperatureManager.swift */,
+				D17EDB5D2437848F00B24C26 /* HistoryManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		D1EA2226243613D800E3F18B = {
 			isa = PBXGroup;
 			children = (
-				D17EDB5F24378A6200B24C26 /* amplifyconfiguration.json */,
-				D17EDB6024378A6200B24C26 /* awsconfiguration.json */,
 				D1EA22482436155A00E3F18B /* .gitignore */,
 				D1EA224C24361A8700E3F18B /* certificate.p12 */,
+				D17EDBA9243A40B500B24C26 /* credentials.json */,
 				D1EA2231243613D800E3F18B /* TemperatureSensor */,
 				D1EA2230243613D800E3F18B /* Products */,
 				3D07BF52EFB1602F73119AA9 /* Pods */,
@@ -104,12 +121,11 @@
 				D1B8023F24364978000EBB15 /* TemperatureSensor.entitlements */,
 				D1EA2232243613D800E3F18B /* AppDelegate.swift */,
 				D1EA2234243613D900E3F18B /* SceneDelegate.swift */,
-				D1EA2236243613D900E3F18B /* ContentView.swift */,
-				D1EA224A243615C500E3F18B /* TemperatureManager.swift */,
-				D1EA224E24361E5700E3F18B /* AWSShadow.swift */,
-				D17EDB5B2437836400B24C26 /* HistoryEntry.swift */,
-				D17EDB5D2437848F00B24C26 /* HistoryManager.swift */,
+				D17EDBA7243A369300B24C26 /* MainViewController.swift */,
+				D17EDBA4243A348E00B24C26 /* Managers */,
+				D17EDBA3243A348300B24C26 /* Models */,
 				D1EA2238243613DC00E3F18B /* Assets.xcassets */,
+				D17EDBA5243A34FB00B24C26 /* Main.storyboard */,
 				D1EA223D243613DC00E3F18B /* LaunchScreen.storyboard */,
 				D1EA2240243613DC00E3F18B /* Info.plist */,
 				D1EA223A243613DC00E3F18B /* Preview Content */,
@@ -143,6 +159,8 @@
 			dependencies = (
 			);
 			name = TemperatureSensor;
+			packageProductDependencies = (
+			);
 			productName = TemperatureSensor;
 			productReference = D1EA222F243613D800E3F18B /* TemperatureSensor.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +189,8 @@
 				Base,
 			);
 			mainGroup = D1EA2226243613D800E3F18B;
+			packageReferences = (
+			);
 			productRefGroup = D1EA2230243613D800E3F18B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,10 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1EA22492436155A00E3F18B /* .gitignore in Resources */,
-				D17EDB6224378A6200B24C26 /* awsconfiguration.json in Resources */,
-				D17EDB6124378A6200B24C26 /* amplifyconfiguration.json in Resources */,
+				D17EDBA6243A34FB00B24C26 /* Main.storyboard in Resources */,
 				D1EA223F243613DC00E3F18B /* LaunchScreen.storyboard in Resources */,
 				D1EA224D24361D7400E3F18B /* certificate.p12 in Resources */,
+				D17EDBAA243A40B500B24C26 /* credentials.json in Resources */,
 				D1EA223C243613DC00E3F18B /* Preview Assets.xcassets in Resources */,
 				D1EA2239243613DC00E3F18B /* Assets.xcassets in Resources */,
 			);
@@ -244,13 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17EDBA8243A369300B24C26 /* MainViewController.swift in Sources */,
 				D1EA224B243615C500E3F18B /* TemperatureManager.swift in Sources */,
 				D17EDB5C2437836400B24C26 /* HistoryEntry.swift in Sources */,
 				D1EA2233243613D800E3F18B /* AppDelegate.swift in Sources */,
 				D1EA2235243613D900E3F18B /* SceneDelegate.swift in Sources */,
 				D17EDB5E2437848F00B24C26 /* HistoryManager.swift in Sources */,
 				D1EA224F24361E5700E3F18B /* AWSShadow.swift in Sources */,
-				D1EA2237243613D900E3F18B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

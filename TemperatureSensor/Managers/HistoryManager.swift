@@ -11,10 +11,11 @@ import AWSDynamoDB
 
 class HistoryManager: ObservableObject {
 
+    static let shared = HistoryManager()
     @Published var historyEntries: [HistoryEntry] = []
     lazy var objectMapper = AWSDynamoDBObjectMapper.default()
 
-    init() {
+    private init() {
         initConfiguration()
     }
 
@@ -41,7 +42,10 @@ class HistoryManager: ObservableObject {
     }
 
     func initConfiguration() {
-        let credentials = AWSStaticCredentialsProvider(accessKey: "AKIAIAES6VRJGDYJS7BA", secretKey: "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")
+        guard let credentialsUrl = Bundle.main.url(forResource: "credentials", withExtension: "json") else { return }
+        guard let credentialsData = try? Data(contentsOf: credentialsUrl), let json = try? JSONSerialization.jsonObject(with: credentialsData, options: []) as? [String: String] else { return }
+        guard let accessKey = json["access_key"], let secretKey = json["secret_key"] else { return }
+        let credentials = AWSStaticCredentialsProvider(accessKey: accessKey , secretKey: secretKey)
         let config = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentials)
         AWSServiceManager.default()?.defaultServiceConfiguration = config
     }
