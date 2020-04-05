@@ -1,5 +1,7 @@
 PODS:
   - AWSCore (2.13.0)
+  - AWSDynamoDB (2.13.0):
+    - AWSCore (= 2.13.0)
   - AWSIoT (2.13.0):
     - AWSCore (= 2.13.0)
   - Charts (3.4.0):
@@ -7,20 +9,23 @@ PODS:
   - Charts/Core (3.4.0)
 
 DEPENDENCIES:
+  - AWSDynamoDB
   - AWSIoT
   - Charts
 
 SPEC REPOS:
   trunk:
     - AWSCore
+    - AWSDynamoDB
     - AWSIoT
     - Charts
 
 SPEC CHECKSUMS:
   AWSCore: 167aba8cdaff6873193a66f062f41749c6c6a3d3
+  AWSDynamoDB: 6f9b06e7a8dc8cdfb9ff2931cb9ea09459ece25a
   AWSIoT: 65a3cda7ea8b10bfb46492bed7f98e89f60e52e0
   Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
 
-PODFILE CHECKSUM: 5e8e57e18b5f75396f20b4308b639bacfd46d522
+PODFILE CHECKSUM: a8b5418afda251177961243666fc312168435ce5
 
 COCOAPODS: 1.8.4

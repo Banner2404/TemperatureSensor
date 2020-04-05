@@ -5,5 +5,6 @@ target 'TemperatureSensor' do
   use_frameworks!
 	pod 'AWSIoT'
   pod 'Charts'
+  pod 'AWSDynamoDB'
 
 end
