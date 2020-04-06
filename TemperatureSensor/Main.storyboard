@@ -20,10 +20,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGt-MP-60p">
-                                <rect key="frame" x="20" y="64" width="374" height="419.5"/>
+                                <rect key="frame" x="20" y="64" width="374" height="368.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="RUo-EU-52G">
-                                        <rect key="frame" x="123" y="162" width="128" height="95.5"/>
+                                        <rect key="frame" x="123" y="136.5" width="128" height="95.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwf-IR-UcO">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="95.5"/>
@@ -54,15 +54,35 @@
                                     <constraint firstAttribute="trailing" secondItem="jJa-W5-jnu" secondAttribute="trailing" constant="20" id="Qrr-dk-D8m"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="lSi-SG-N1r">
+                                <rect key="frame" x="188.5" y="644.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m7m-80-aNS">
+                                <rect key="frame" x="107" y="442.5" width="200" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="O5X-VV-Tel"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Day"/>
+                                    <segment title="Week"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlChanged:" destination="pUp-dA-pim" eventType="valueChanged" id="ZeV-jy-eP2"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cdf-3I-KZ0" firstAttribute="trailing" secondItem="TGt-MP-60p" secondAttribute="trailing" constant="20" id="3ws-UP-cSn"/>
+                            <constraint firstItem="WSS-fU-jTV" firstAttribute="top" secondItem="m7m-80-aNS" secondAttribute="bottom" constant="10" id="91o-t6-Mgs"/>
                             <constraint firstItem="WSS-fU-jTV" firstAttribute="leading" secondItem="cdf-3I-KZ0" secondAttribute="leading" constant="20" id="Kaa-5y-eVe"/>
+                            <constraint firstItem="m7m-80-aNS" firstAttribute="top" secondItem="TGt-MP-60p" secondAttribute="bottom" constant="10" id="LzD-5M-W5Q"/>
                             <constraint firstItem="TGt-MP-60p" firstAttribute="top" secondItem="cdf-3I-KZ0" secondAttribute="top" constant="20" id="XZD-qS-AoG"/>
+                            <constraint firstItem="lSi-SG-N1r" firstAttribute="centerY" secondItem="WSS-fU-jTV" secondAttribute="centerY" id="Zak-yh-5Vx"/>
                             <constraint firstItem="cdf-3I-KZ0" firstAttribute="bottom" secondItem="WSS-fU-jTV" secondAttribute="bottom" constant="20" id="fdj-HW-Ixm"/>
+                            <constraint firstItem="lSi-SG-N1r" firstAttribute="centerX" secondItem="WSS-fU-jTV" secondAttribute="centerX" id="ofp-i1-oDh"/>
                             <constraint firstItem="WSS-fU-jTV" firstAttribute="height" secondItem="75R-B3-IEg" secondAttribute="height" multiplier="0.4" id="ot5-PQ-I5s"/>
-                            <constraint firstItem="WSS-fU-jTV" firstAttribute="top" secondItem="TGt-MP-60p" secondAttribute="bottom" id="re7-tY-VR5"/>
+                            <constraint firstItem="m7m-80-aNS" firstAttribute="centerX" secondItem="75R-B3-IEg" secondAttribute="centerX" id="qse-AT-cgG"/>
                             <constraint firstItem="cdf-3I-KZ0" firstAttribute="trailing" secondItem="WSS-fU-jTV" secondAttribute="trailing" constant="20" id="ukM-DK-d8J"/>
                             <constraint firstItem="TGt-MP-60p" firstAttribute="leading" secondItem="cdf-3I-KZ0" secondAttribute="leading" constant="20" id="wyw-KD-DV6"/>
                         </constraints>
@@ -71,6 +91,8 @@
                     <connections>
                         <outlet property="chartView" destination="WSS-fU-jTV" id="Tip-id-1Ns"/>
                         <outlet property="connectionLabel" destination="jJa-W5-jnu" id="LOD-ef-8GJ"/>
+                        <outlet property="historyActivityIndicator" destination="lSi-SG-N1r" id="oCf-5K-LsA"/>
+                        <outlet property="segmentedControl" destination="m7m-80-aNS" id="U6S-7N-NG5"/>
                         <outlet property="temperatureLabel" destination="hwf-IR-UcO" id="yVG-OW-y4w"/>
                     </connections>
                 </viewController>

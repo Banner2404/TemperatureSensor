@@ -12,10 +12,16 @@ import Charts
 
 class MainViewController: UIViewController {
 
+    private let intervals: [HistoryManager.Interval] = [.day, .week]
+    private var selectedInterval: HistoryManager.Interval {
+        return intervals[segmentedControl.selectedSegmentIndex]
+    }
     private var cancellableBag = Set<AnyCancellable>()
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var connectionLabel: UILabel!
     @IBOutlet weak var chartView: LineChartView!
+    @IBOutlet weak var historyActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     lazy var numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.maximumFractionDigits = 1
@@ -39,6 +45,18 @@ class MainViewController: UIViewController {
             .map { self.chartData(from: $0) }
             .assign(to: \.data, on: chartView)
             .store(in: &cancellableBag)
+
+        HistoryManager.shared.$isLoading
+            .map { !$0 }
+            .assign(to: \.isHidden, on: historyActivityIndicator)
+            .store(in: &cancellableBag)
+
+        chartView.xAxis.drawGridLinesEnabled = false
+        chartView.leftAxis.axisMinimum = 0
+        chartView.rightAxis.drawGridLinesEnabled = false
+        chartView.rightAxis.drawLabelsEnabled = false
+        chartView.legend.enabled = false
+        updateScale()
     }
 
     func chartData(from entries: [HistoryEntry]) -> LineChartData {
@@ -59,6 +77,15 @@ class MainViewController: UIViewController {
         return LineChartData(dataSet: dataSet)
     }
     
+    @IBAction func segmentedControlChanged(_ sender: Any) {
+        HistoryManager.shared.selectedInterval = selectedInterval
+        updateScale()
+    }
+
+    func updateScale() {
+        chartView.xAxis.axisMinimum = selectedInterval.startDate
+        chartView.xAxis.valueFormatter = selectedInterval.formatter
+    }
 
     /*
     // MARK: - Navigation
