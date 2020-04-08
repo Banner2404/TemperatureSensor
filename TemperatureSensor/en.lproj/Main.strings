@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "°C"; ObjectID = "X60-NC-8fr"; */
+"X60-NC-8fr.text" = "°C";
+
+/* Class = "UILabel"; text = "20"; ObjectID = "hwf-IR-UcO"; */
+"hwf-IR-UcO.text" = "20";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jJa-W5-jnu"; */
+"jJa-W5-jnu.text" = "Label";
+
+/* Class = "UISegmentedControl"; m7m-80-aNS.segmentTitles[0] = "Day"; ObjectID = "m7m-80-aNS"; */
+"m7m-80-aNS.segmentTitles[0]" = "Day";
+
+/* Class = "UISegmentedControl"; m7m-80-aNS.segmentTitles[1] = "Week"; ObjectID = "m7m-80-aNS"; */
+"m7m-80-aNS.segmentTitles[1]" = "Week";

@@ -93,5 +93,16 @@ class TemperatureManager {
         case connected
         case connecting
         case disconnected
+
+        var description: String {
+            switch self {
+            case .connected:
+                return NSLocalizedString("connected", comment: "")
+            case .connecting:
+                return NSLocalizedString("connecting", comment: "")
+            case .disconnected:
+                return NSLocalizedString("disconnected", comment: "")
+            }
+        }
     }
 }

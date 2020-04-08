@@ -37,7 +37,7 @@ class MainViewController: UIViewController {
             .store(in: &cancellableBag)
 
         TemperatureManager.shared.$status
-            .map { String(describing: $0).capitalized }
+            .map { $0.description.capitalized }
             .assign(to: \.text, on: connectionLabel)
             .store(in: &cancellableBag)
 

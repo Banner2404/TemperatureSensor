@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TemperatureSensor
+
+  Created by Евгений Соболь on 4/8/20.
+  Copyright © 2020 Esobol. All rights reserved.
+*/
+
+"connected" = "подключено";
+"connecting" = "подлючение";
+"disconnected" = "отключено";
+
